@@ -16,11 +16,76 @@
 
 <body>
     <div class="main-container">
-        <header></header>
+        <header>
+            <div><img src="images/logo/Booki.png"></div>
+            <nav>
+                <button>Hébergements</button>
+                <button>Activités</button>
+            </nav>
+        </header>
         <main>
+            <div class="Find_hebergement">
+                <h1>Trouvez votre hebergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+                <form class="search-bar" action="#">
+                    <span><i class="fa-solid fa-location-dot"></i></span><input type="text" name="search-city" id="search-city" placeholder="Marseille, France" required><button type="submit">Rechercher</button>
+                </form>
+                <div class="filter-bar">
+                    <p>Filtres</p>
+                    <button><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
+                    <button><i class="fa-solid fa-person"></i>Family</button>
+                    <button><i class="fa-solid fa-heart"></i>Romantic</button>
+                    <button><i class="fa-solid fa-fire"></i>Nos pépites</button>
+                </div>
+                <div class="infobar">
+                    <i class="fa-thin fa-circle-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </div>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-
+                    <div class="herbergements-title">
+                        <h2 class="section-title">Hébergements à Marseille</h2>
+                    </div>
+                    <div class="hebergements-cards">
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Hôtel du port</h3>
+                                        <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Hôtel Chez amina</h3>
+                                        <p class="card-subtitle">Nuit à partir de 96<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>    
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
