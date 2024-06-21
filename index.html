@@ -17,33 +17,45 @@
 <body>
     <div class="main-container">
         <header>
-            <div><img src="images/logo/Booki.png"></div>
-            <nav>
-                <button>Hébergements</button>
-                <button>Activités</button>
+            <div class="logo">
+                <img id="logo" src="images/logo/Booki.png" alt="Logo Booki">
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li>
+                        <a class="lien-menu" href="#">Hébergements</a>
+                    </li>    
+                </ul>
+                <ul>
+                    <li>
+                        <a class="lien-menu" href="#">Activités</a>
+                    </li>    
+                </ul>
             </nav>
         </header>
         <main>
-            <div class="Find_hebergement">
-                <h1>Trouvez votre hebergement pour des vacances de rêve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
-                <form class="search-bar" action="#">
-                    <span><i class="fa-solid fa-location-dot"></i></span><input type="text" name="search-city" id="search-city" placeholder="Marseille, France" required><button type="submit">Rechercher</button>
+            <div class="Recherche_hebergement">
+                <div>
+                    <h1>Trouvez votre hebergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
+                <form class="form" action="#">
+                    <div class="location"><i class="fa-solid fa-location-dot" style="color: #000000;"></i></div><input type="text" name="search-city" id="search-city" placeholder="Marseille, France" required><button class="search-button" type="submit"><span>Rechercher</span><span class="search-loupe"><i class="fa-solid fa-magnifying-glass"></i></span></button>
                 </form>
-                <div class="filter-bar">
-                    <p>Filtres</p>
-                    <button><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
-                    <button><i class="fa-solid fa-person"></i>Family</button>
-                    <button><i class="fa-solid fa-heart"></i>Romantic</button>
-                    <button><i class="fa-solid fa-fire"></i>Nos pépites</button>
+                <div class="filtre">
+                    <p class="filter-title">Filtres</p>
+                    <button class="eco"><i class="fa-solid fa-money-bill-wave fa-lg"></i>Economique</button>
+                    <button class="family"><i class="fa-solid fa-person fa-lg"></i>Family</button>
+                    <button class="romantic"><i class="fa-solid fa-heart fa-lg"></i>Romantic</button>
+                    <button class="pepite"><i class="fa-solid fa-fire fa-lg"></i>Nos pépites</button>
                 </div>
                 <div class="infobar">
-                    <i class="fa-solid fa-circle-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    <div class="info"><i class="fa-solid fa-info fa-sm" style="color: #0065FC;"></i></div><p class="parag-info">Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </div>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-                    <div class="herbergements-title">
+                    <div>
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">
@@ -161,7 +173,10 @@
                                 </div>
                             </article>
                         </a>
-                    </div>    
+                    </div>
+                    <div>
+                        <h3 class="section-title-plus">Afficher plus</h3>
+                    </div>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -229,9 +244,80 @@
                     </div>
                 </section>
             </div>
+            <div class="activites">
+                <div>
+                    <h2>Activites à Marseille</h2>
+                </div>
+                <div class="activites-cards">
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="Image du vieux port">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Vieux-Port</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/paul-hermann.jpg" alt="Image du vieux port">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Fort de Pomègues</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image du vieux port">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Parc national des Calanques</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/florian-wehde.jpg" alt="Image du vieux port">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </div>
         </main>
-        <footer></footer>
+        <footer>
+            <div>
+                <div class="a-propos">
+                    <h3 class="card-title">A propos</h3>
+                    <p>Fonctionnement du site</p>
+                    <p>Conditions générales</p>
+                    <p>Données et confidentialité</p>
+                </div>
+            </div>
+            <div>
+                <div class="nos-hebergements">
+                    <h3 class="card-title">Nos Hébergements</h3>
+                    <p>Charte qualité</p>
+                    <p>Proposer votre hôtel</p>
+                </div>
+            </div>
+            <div>
+                <div class="assistance">
+                    <h3 class="card-title">Assistance</h3>
+                    <p>Centre d'aide</p>
+                    <p>Nous contacter</p>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
+
 
 </html>
