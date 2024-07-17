@@ -20,15 +20,13 @@
             <div class="logo">
                 <img id="logo" src="images/logo/Booki.png" alt="Logo Booki">
             </div>
-            <nav id="mainNav">
+            <nav id="mainnav">
                 <ul>
                     <li>
-                        <a class="lien-menu" href="#">Hébergements</a>
+                        <a class="lien-menu l1" href="#">Hébergements</a>
                     </li>    
-                </ul>
-                <ul>
                     <li>
-                        <a class="lien-menu" href="#">Activités</a>
+                        <a class="lien-menu l2" href="#">Activités</a>
                     </li>    
                 </ul>
             </nav>
@@ -40,18 +38,14 @@
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
                 <form class="form" action="#">
-                    <div class="location"><i class="fa-solid fa-location-dot" style="color: #000000;"></i></div><input type="text" name="search-city" id="search-city" placeholder="Marseille, France" required><button class="search-button" type="submit"><span class="search-texte">Rechercher</span><span class="search-loupe"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></span></button>
+                    <div class="location"><i class="fa-solid fa-location-dot" style="color: #000000;"></i></div><input type="text" name="search-city" id="search-city" placeholder="Marseille, France" size="" required><button class="search-button" type="submit"><span class="search-texte">Rechercher</span><span class="search-loupe"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></span></button>
                 </form>
                 <div class="filtre">
                     <p class="filter-title">Filtres</p>
-                    <div class="bouton-filtre one">
                         <button class="eco"><i class="fa-solid fa-money-bill-wave fa-lg"></i>Economique</button>
-                        <button class="family"><i class="fa-solid fa-person fa-lg"></i>Family</button>
-                    </div>
-                    <div class="bouton-filtre two">
-                        <button class="romantic"><i class="fa-solid fa-heart fa-lg"></i>Romantic</button>
+                        <button class="family"><i class="fa-solid fa-person fa-lg"></i>Familial</button>
+                        <button class="romantic"><i class="fa-solid fa-heart fa-lg"></i>Romantique</button>
                         <button class="pepite"><i class="fa-solid fa-fire fa-lg"></i>Nos pépites</button>
-                    </div>
                 </div>
                 <div class="infobar">
                     <div class="info"><i class="fa-solid fa-info fa-sm" style="color: #0065FC;"></i></div><p class="parag-info">Plus de 500 logements sont disponibles dans cette ville</p>
@@ -248,9 +242,9 @@
                     </div>
                 </section>
             </div>
-            <div class="activites">
-                <div>
-                    <h2>Activites à Marseille</h2>
+            <section class="activites">
+                <div class="activites-title">
+                    <h2 class="section-title">Activites à Marseille</h2>
                 </div>
                 <div class="activites-cards">
                     <a href="#">
@@ -294,7 +288,7 @@
                         </article>
                     </a>
                 </div>
-            </div>
+            </section>
         </main>
         <footer>
             <div>
