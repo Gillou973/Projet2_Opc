@@ -818,7 +818,10 @@ footer {
         height: 1435px;
         margin-top: 10px;
         box-sizing: border-box;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
 
     .hebergements-cards {
         flex-direction: column;
@@ -827,8 +830,10 @@ footer {
     }
 
     .hebergements .section-title {
-        padding-left: 30px;
+        /*padding-left: 30px; */
         padding-bottom: 0px;
+        position: relative;
+        left: -30px;
     }
 
     .hebergements-cards .card{
@@ -850,16 +855,21 @@ footer {
     }
 
     .hebergements .section-title-plus {
-        padding-left: 20px;
-        margin: 0;
-        height: 86px;
-        display: flex;
-        align-items: center;
+       /* padding-left: 20px;
+        margin: 0; */
+        height: 86px; 
+        position: relative;
+        left: -110px;
     }
     
     .title-hebergements, .title-plus-hebergements {
         background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
+
+
 
     
     
@@ -935,6 +945,16 @@ footer {
 
     .activites-title h2 {
         margin-bottom: 30px;
+    }
+
+    .activites-title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .activites-title .section-title {
+        position: relative;
+        left: -50px;
     }
 
 
