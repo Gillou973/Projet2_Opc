@@ -121,7 +121,6 @@ h1 {
 }
 
 p {
-    height: 19px;
     font-size: 16px;
     margin-top: 0px;
 }
@@ -287,10 +286,10 @@ h2 {
 .hebergements-cards .card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100%;
-    height: 207px;
+    height: 100%;
     box-sizing: border-box;
+    align-items: stretch;
 }
 
 .hebergements-cards img{
@@ -462,14 +461,12 @@ footer {
     /* ... */
 
     .hebergements-cards .card-content {
-        width: 100%;
-    }
-
-    .hebergements-cards .card-title, .hebergements-cards .card-subtitle {
-        font-size: 1.2vmax;
+        width: calc(100% - 20px);
     }
 
 }
+
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
@@ -498,7 +495,7 @@ footer {
     .hebergements-cards {
         width: 100%;
         justify-content: space-between;
-        align-items: center;
+       /* align-items: center; */
         box-sizing: border-box;
     }
 
@@ -516,9 +513,7 @@ footer {
         font-size: 2vh;
     }
     */
-    .hebergements-cards .card-title, .hebergements-cards .card-subtitle {
-        font-size: 1.3vmax;
-    }
+
 
 /****** Populaires 1024px ***********/
     .populaires {
@@ -526,9 +521,9 @@ footer {
         margin-top: 50px;
     }
 
-    .populaires-title {
+    /*.populaires-title {
         padding-top: 30px;
-    }
+    }*/
 
     .populaires-cards {
         display: flex;
@@ -589,7 +584,7 @@ footer {
     body {
         background-color: white;
         width: 100%;
-        margin: 0px 0 10px 0;
+        margin: 0;
     }
 
     header, main, .hebergements-cards {
@@ -604,6 +599,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0;
     }
 
 
@@ -688,17 +684,19 @@ footer {
         margin-top: 30px;
     }
     .search-title h1 {
-        width: 100%;
-        position: relative;
+        width: calc(100% - 40px);
+        padding-left: 20px;
+       /* position: relative;
         left: 20px;
-        /*
         margin-left: 20px;
         margin-right: 20px; */
         margin-bottom: 10px;
     }
 
     .search-title p {
-        margin-left: 20px;
+        width: calc(100% - 40px);
+        padding-left: 20px;
+        /*margin-left: 20px;*/
         margin-bottom: 30px;
     }
 
@@ -729,7 +727,7 @@ footer {
     }
     .search-button {
         position: absolute;
-        right: 66px;
+        right: 18px;
         z-index: 2;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px;
     }
@@ -790,14 +788,15 @@ footer {
 
 
     .infobar {
-        width: 100%;
-        margin-left: 20px;
-        display: flex;
+        width: calc(100% - 40px);
+        padding-left: 20px;
+        /*margin-left: 20px; */
+        /*display: flex; */
     }
 
     .infobar p{
-        width: 315px;
-        padding-bottom: 20px;
+        width: 100%;
+        /*padding-bottom: 20px; */
 
     }
     .parag-info p{
@@ -847,8 +846,9 @@ footer {
     .hebergements .section-title {
         /*padding-left: 30px; */
         padding-bottom: 0px;
-        position: relative;
-        left: -30px;
+        padding-left: 20px;
+        /*position: relative;
+        left: -30px; */
     }
 
     .hebergements-cards .card{
@@ -871,31 +871,32 @@ footer {
     }
 
     .hebergements .section-title-plus {
-       /* padding-left: 20px;
-        margin: 0; */
+        /*width: 100%; */
+        padding-left: 20px;
+        /*margin: 0; */
         height: 86px; 
-        position: relative;
-        left: -110px;
+       /* position: relative;
+        left: -110px; */
     }
     
     .title-hebergements, .title-plus-hebergements {
         background-color: white;
         width: 100%;
-        display: flex;
-        justify-content: center;
+        /*display: flex;
+        justify-content: center; */
     }
 
 
-    .hebergements-cards .card-title, .hebergements-cards .card-subtitle {
-        font-size: 2vmax;
-    }
-    
     
 /****** Populaires 768px ***********/    
 
     .populaires {
         margin-bottom: 30px;
         margin-top: 10px;
+    }
+
+    .populaires-title {
+        padding-top: 20px;
     }
 
     .populaires-title h2 {
@@ -933,7 +934,7 @@ footer {
         width: 100%;
         height: 965px;
         margin-top: 40px;
-        margin-bottom: 50px;
+        /*margin-bottom: 50px; */
     }
 
     .activites-title {
@@ -967,23 +968,25 @@ footer {
         margin-bottom: 30px;
     }
 
-    .activites-title {
-        display: flex;
-        justify-content: center;
-    }
 
-    .activites-title .section-title {
-        position: relative;
-        left: -50px;
-    }
 
 
 /****** Footer 768px ***********/
     footer {
-        width: 100%;
-        height: 400px;
+        width: calc(100% - 0px);
+        height: 461px;
         flex-direction: column;
-        padding-left: 20px;
+        /*padding-left: 20px; */
         margin-top: 20px;
     }
+
+    Footer div {
+        width: 90%;
+        margin-left: 30px;
+    }
+
+    .a-propos, .nos-hebergements, .assistance {
+        padding-left: 0;
+        margin-left: 0;
+     }
 }
