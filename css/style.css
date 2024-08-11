@@ -604,7 +604,7 @@ footer {
 
 
     header {
-        width: 375px;
+        width: 100%px;
         height: 115px;
         display: flex;
         flex-direction: column;
@@ -647,17 +647,19 @@ footer {
     }
 
     .l1 {
-        width: 50%;
+        width: 100%;
         height: 19.5px;
-        padding: 0 47px 0 47px;
+        /*padding: 0 47px 0 47px;*/
         margin-left: 0;
+        text-align: center;
        
     }
 
     .l2 {
-        width: 50%;
+        width: 100%;
         height: 19.5px;
-        padding: 0 62.5px 0 62.5px;
+        /*padding: 0 62.5px 0 62.5px; */
+        text-align: center;
     }
 
     
@@ -776,12 +778,20 @@ footer {
     .eco, .romantic {
         width: 162.5px;
         margin-left: 20px;
-
+        padding: 4px 19px 4px 19px;
+        justify-content: flex-start;
+        column-gap: 10px;
+        font-size: 1.8vh;
     } 
 
     .family, .pepite {
         width: 162.5px;
         margin-right: 20px;
+        padding: 4px 19px 4px 19px;
+        justify-content: flex-start;
+        column-gap: 10px;
+        /*font-size: 14px; */
+        font-size: 1.8vh;
     }
 
 
@@ -805,7 +815,7 @@ footer {
 
     .bouton-filtre {
         display: flex;
-        justify-content: space-between;
+        /*justify-content: space-between;*/
         margin: 20px;
         width: 335px;
     }
