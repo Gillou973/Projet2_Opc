@@ -734,21 +734,21 @@ footer {
     }
 
     .eco, .romantic {
-        width: 162.5px;
+        width: 100%;
         margin-left: 20px;
-        padding: 4px 19px 4px 19px;
+        padding: 4px 10px 4px 10px;
         justify-content: flex-start;
         column-gap: 10px;
-        font-size: 1.8vh;
+        font-size: 0.84rem;
     } 
 
     .family, .pepite {
-        width: 162.5px;
+        width: 100%;
         margin-right: 20px;
-        padding: 4px 19px 4px 19px;
+        padding: 4px 10px 4px 10px;
         justify-content: flex-start;
         column-gap: 10px;
-        font-size: 1.8vh;
+        font-size: 0.84rem;
     }
 
 
